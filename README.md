@@ -1,7 +1,11 @@
-#VPR Health Pages
+#VPR Topic Pages
+
+We use this template to generate pages like this:
 [Health Care Home](http://www.vpr.net/apps/health)
 
-[Under the Hood](http://www.vpr.net/apps/health/network)
+##How They Work
+
+Tweak a few lines in views.py and spin up a topic landing page for any NPR API tag.
 
 ## Author
 [Matt Parrilla](http://twitter.com/mattparrilla)
