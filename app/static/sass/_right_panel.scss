@@ -30,22 +30,30 @@
     }
     #reporters {
         div.reporter {
-            margin-top: 10px;
+            margin-bottom: 20px;
         }
-        h4 {
-            margin: 15px 0 2px;
-            font-size: 18px;
-            a {
-                color: $black;
-                border: 0;
-                &:hover {
-                    color: lighten($black, 20%);
+        div.reporter_twitter {
+            padding-top: 10px;
+            @media (min-width: $phone) {
+                padding-top: 15px;
+            }
+            h4 {
+                margin: 15px 0 2px;
+                font-size: 18px;
+                a {
+                    color: $black;
+                    border: 0;
+                    &:hover {
+                        color: lighten($black, 20%);
+                    }
                 }
             }
-        }
-        a.twitter_handle {
-            font-weight: 500;
-            @include lt-link(darken($gray, 10%), white, 2px);
+            p.twitter_handle {
+                font-weight: 500;
+                a {
+                    @include lt-link(darken($gray, 10%), white, 2px);
+                }
+            }
         }
     }
     @media (max-width: 500px) {

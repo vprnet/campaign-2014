@@ -6,11 +6,13 @@ from config import BASE_URL
 
 @app.route('/')
 def index():
+    tags = [170839705]
     page_url = BASE_URL + request.path
     page_title = 'Vermont Legislature'
-    stories = api_feed([170839705], numResults=10, thumbnail=True)
+    page_explainer = ["VPR's guide to the Vermont Legislature. Latest coverage, statehouse streams and legislative resources, all in one place."]
+    stories = api_feed(tags, numResults=10, thumbnail=True)
     featured = api_feed([291752955, 292002570], numResults=2, thumbnail=True, sidebar=True)
-    reporters = reporter_list([170839705])
+    reporters = reporter_list(tags)
 
     social = {
         'title': "VPR: Vermont Legislature 2014",
@@ -23,6 +25,7 @@ def index():
 
     return render_template('content.html',
         page_title=page_title,
+        page_explainer=page_explainer,
         stories=stories,
         social=social,
         featured=featured,
