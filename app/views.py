@@ -10,7 +10,6 @@ def index():
     page_title = 'Vermont Legislature'
     stories = api_feed([170839705], numResults=10, thumbnail=True)
     featured = api_feed([291752955, 292002570], numResults=2, thumbnail=True, sidebar=True)
-    print featured
     reporters = reporter_list([170839705])
 
     social = {
