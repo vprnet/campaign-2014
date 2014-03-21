@@ -5,7 +5,7 @@ We use this template to generate pages like this:
 
 ##How They Work
 
-Tweak a few lines in views.py and spin up a topic landing page for any NPR API tag.
+Tweak a few lines in `apps/views.py` and spin up a topic landing page for any NPR API tag.
 
 ## Author
 [Matt Parrilla](http://twitter.com/mattparrilla)
