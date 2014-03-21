@@ -37,6 +37,9 @@
             @media (min-width: $phone) {
                 padding-top: 15px;
             }
+            @media (min-width: $laptop) {
+                padding-top: 0px;
+            }
             h4 {
                 margin: 15px 0 2px;
                 font-size: 18px;

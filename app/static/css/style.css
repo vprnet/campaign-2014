@@ -3916,6 +3916,9 @@ div.audio_player {
   @media (min-width: 500px) {
     #right_panel #reporters div.reporter_twitter {
       padding-top: 15px; } }
+  @media (min-width: 1000px) {
+    #right_panel #reporters div.reporter_twitter {
+      padding-top: 0px; } }
   #right_panel #reporters div.reporter_twitter h4 {
     margin: 15px 0 2px;
     font-size: 18px; }
