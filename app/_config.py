@@ -9,7 +9,7 @@ FREEZER_IGNORE_MIMETYPE_WARNINGS = True
 AWS_KEY = ''
 AWS_SECRET_KEY = ''
 AWS_BUCKET = 'www.vpr.net'
-AWS_DIRECTORY = 'apps/health'
+AWS_DIRECTORY = 'apps/sandbox'
 
 NPR_API_KEY = ''
 
