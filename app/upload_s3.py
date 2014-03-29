@@ -18,6 +18,7 @@ content_types = {
     '.png': 'image/png',
     '.jpg': 'image/jpeg',
     '.JPG': 'image/jpeg',
+    '.jpeg': 'image/jpeg',
     '.bmp': 'image/bmp',
     '.gif': 'image/gif',
     '.ico': 'image/ico',
