@@ -18,8 +18,8 @@ STATIC_EXPIRES = 60 * 24 * 3600
 HTML_EXPIRES = 3600
 
 # Upload Settings (ignores anything included below)
-IGNORE_DIRECTORIES = ['.git', 'venv', 'sass', 'templates', 'gimp']
-IGNORE_FILES = ['.DS_Store']
+IGNORE_DIRECTORIES = ['.git', 'venv', 'sass', 'templates', 'gimp', 'node_modules']
+IGNORE_FILES = ['.DS_Store', 'Gruntfile.js', 'package.json']
 IGNORE_FILE_TYPES = ['.gz', '.pyc', '.py', '.rb', '.md']
 
 if AWS_DIRECTORY:
@@ -29,9 +29,3 @@ else:
     BASE_URL = 'http://' + AWS_BUCKET
 
 ABSOLUTE_PATH = os.path.dirname(os.path.abspath(inspect.getfile(inspect.currentframe()))) + '/'
-
-# If on my computer use local root
-if 'mparrilla' or 'm' in ABSOLUTE_PATH:
-    PROJECT_ROOT = '/'
-else:
-    PROJECT_ROOT = '/' + AWS_DIRECTORY

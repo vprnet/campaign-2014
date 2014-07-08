@@ -152,6 +152,7 @@ def query_api(tag, numResults=10):
 
     r = requests.get(query)
     j = json.loads(r.text)
+    print j
     stories = j['list']['story']
 
     return stories
