@@ -18,11 +18,11 @@ def index():
     #featured = api_feed([291752955, 292002570], numResults=2, thumbnail=True, sidebar=True)
 
     social = {
-        'title': "",
+        'title': "Campaign 2014",
         'subtitle': '',
         'img': '',
-        'description': "",
-        'twitter_text': "",
+        'description': "VPR's guide to the 2014 campaign season. Get our latest coverage, special features and election news apps all in one place.",
+        'twitter_text': "VPR's guide to the 2014 campaign season.",
         'twitter_hashtag': ''
     }
 
