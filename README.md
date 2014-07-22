@@ -1,13 +1,6 @@
-#VPR Topic Pages
+#VPR Campaign Page
 
-We use this template to generate pages like this:
-[Health Care Home](http://www.vpr.net/apps/health)
-
-##How They Work
-
-At VPR, we tweak a few lines in `apps/views.py` and spin up a topic landing page for any NPR API tag.
-
-Other NPR member stations would need to change a bit more, primarily the styling and templates but also a few lines in `app.query.py`. If there is interest, I might further abstract things so that the station could be changed just as easily as the API tags.
+This is a VPR Topic Page. See the generic [topic page repo](http://github.com/vprnet/topic-page) for the basic template.
 
 ## Author
 [Matt Parrilla](http://twitter.com/mattparrilla)
